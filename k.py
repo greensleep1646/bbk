@@ -1,12 +1,12 @@
 import requests
 
 def get_user_info(username):
-    url = f"https://api.telegram.org/bot{TOKEN}/getUserProfilePhotos?user_id={username}"
+    url = f"https://api.telegram.org/bot/getUserProfilePhotos?user_id={username}"
     response = requests.get(url)
     return response.json()
 
 def get_user_location(username):
-    url = f"https://api.telegram.org/bot{TOKEN}/getUserLocation?user_id={username}"
+    url = f"https://api.telegram.org/bot/getUserLocation?user_id={username}"
     response = requests.get(url)
     return response.json()
 
